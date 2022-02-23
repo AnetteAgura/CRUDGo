@@ -28,7 +28,7 @@ go run main.go
 
 - You can see all games in database
 - You can add new games to the database
-- In detailed view you can delete or update the game
+- You can delete or update the game
 - You can see game detailed view
   - In detailed view you can click on the company to see other games made by same company
   - In detailed view you can click on the year to see other games made on same year
