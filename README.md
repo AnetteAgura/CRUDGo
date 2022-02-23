@@ -20,7 +20,7 @@ Install all dependencies
 
 ## How to run:
 
-SHIFT + F10
+go run main.go
 
 ## Possibilities:
 
