@@ -20,7 +20,9 @@ Install all dependencies
 
 ## How to run:
 
+```
 go run main.go
+```
 
 ## Possibilities:
 
