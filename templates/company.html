@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+</head>
+<body>
+
+<table border="1"><caption>GAMES</caption>
+    <thead>
+    <tr>
+    </tr>
+    </thead>
+    <tbody>
+    {{ range . }}
+    <tr>
+        <td> {{ .Name }} </td>
+    </tr>
+    {{ end }}
+    </tbody>
+</table>
+
+<a class="gamelink back" href="/" >Back</a>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+
+<h2>Edit Game</h2>
+<form method="POST" action="/update">
+    <input type="hidden" name="uid" value="{{ .Id }}" />
+    <label> Name </label><input type="text" name="name" value="{{ .Name }}"  /><br />
+    <label> Year </label><input type="text" name="year" value="{{ .Year }}"  /><br />
+    <label> Company </label><input type="text" name="company" value="{{ .Company }}"  /><br />
+    <input type="submit" value="Update game" />
+</form><br />
+
+</body>
+</html>
