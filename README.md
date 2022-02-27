@@ -26,3 +26,7 @@ go run main.go
 - You can see game detailed view
   - In detailed view you can click on the company to see other games made by same company
   - In detailed view you can click on the year to see other games made on same year
+
+## PS!
+
+**Shows ERRORS but they do not matter**
