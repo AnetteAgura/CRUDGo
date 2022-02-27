@@ -12,12 +12,6 @@
 - GoLang
 - MySql
 
-## How to setup:
-
-Install all dependencies
-
-*ALT + ENTER* **OR** *hover over and choose install*
-
 ## How to run:
 
 ```
