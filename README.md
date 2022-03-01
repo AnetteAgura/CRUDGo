@@ -12,6 +12,35 @@
 - GoLang
 - MySql
 
+## Setting up the application
+
+- MySql Server using the Mysql Installation Guide [Mysql Installation Guide](https://dev.mysql.com/doc/mysql-getting-started/en/#mysql-getting-started-installing)
+
+``` 
+mkdir crud
+``` 
+``` 
+cd crud
+``` 
+``` 
+git clone https://github.com/AnetteAgura/CRUDGo
+``` 
+``` 
+sudo apt-get update
+``` 
+``` 
+sudo apt-get install mysql-server
+``` 
+``` 
+cd CRUDGo
+``` 
+``` 
+mysql -h localhost -u root < RUN.sql
+``` 
+``` 
+sudo apt install golang-go
+``` 
+
 ## How to run:
 
 ```
