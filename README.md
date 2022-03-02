@@ -41,11 +41,7 @@ mysql -h localhost -u root < RUN.sql
 sudo apt install golang-go
 ``` 
 
-## How to run:
 
-```
-go run main.go
-```
 ## How to set up enviorment variables:
 Create a .env file and add the following into it
 ```
@@ -54,6 +50,12 @@ DBUSER= [YOUR DATABASE USERNAME]
 DBPASS= [YOUR DATABASE PASSWORD]
 DBNAME=games
 ```
+## How to run:
+
+```
+go run main.go
+```
+
 ## Possibilities:
 
 - You can see all games in database
