@@ -46,7 +46,14 @@ sudo apt install golang-go
 ```
 go run main.go
 ```
-
+## How to run:
+Create a .env file and add the following into it
+```
+DBDRIVER=mysql
+DBUSER= [YOUR DATABASE USERNAME]
+DBPASS= [YOUR DATABASE PASSWORD]
+DBNAME=games
+```
 ## Possibilities:
 
 - You can see all games in database
