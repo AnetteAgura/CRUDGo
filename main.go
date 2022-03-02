@@ -2,11 +2,12 @@ package main
 
 import (
 	"database/sql"
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/joho/godotenv"
 	"html/template"
 	"log"
 	"net/http"
-
-	_ "github.com/go-sql-driver/mysql"
+	"os"
 )
 
 type Games struct {
@@ -16,11 +17,17 @@ type Games struct {
 	Company string
 }
 
+func init() {
+	if err := godotenv.Load(); err != nil {
+		log.Print("No .env file found")
+	}
+}
+
 func dbConn() (db *sql.DB) {
-	dbDriver := "mysql"
-	dbUser := "anette"
-	dbPass := "root"
-	dbName := "games"
+	dbDriver := os.Getenv("DBDRIVER")
+	dbUser := os.Getenv("DBUSER")
+	dbPass := os.Getenv("DBPASS")
+	dbName := os.Getenv("DBNAME")
 	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
 	if err != nil {
 		panic(err.Error())
@@ -209,6 +216,11 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+
 	log.Println("Server started on: http://localhost:8080")
 	http.HandleFunc("/", Index)
 	http.HandleFunc("/show", Show)
@@ -220,4 +232,5 @@ func main() {
 	http.HandleFunc("/update", Update)
 	http.HandleFunc("/delete", Delete)
 	http.ListenAndServe(":8080", nil)
+
 }
