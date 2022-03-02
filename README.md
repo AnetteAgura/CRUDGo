@@ -46,7 +46,7 @@ sudo apt install golang-go
 ```
 go run main.go
 ```
-## How to run:
+## How to set up enviorment variables:
 Create a .env file and add the following into it
 ```
 DBDRIVER=mysql
