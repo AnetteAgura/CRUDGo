@@ -17,12 +17,6 @@
 - MySql Server using the Mysql Installation Guide [Mysql Installation Guide](https://dev.mysql.com/doc/mysql-getting-started/en/#mysql-getting-started-installing)
 
 ``` 
-mkdir crud
-``` 
-``` 
-cd crud
-``` 
-``` 
 git clone https://github.com/AnetteAgura/CRUDGo
 ``` 
 ``` 
@@ -35,7 +29,7 @@ sudo apt-get install mysql-server
 cd CRUDGo
 ``` 
 ``` 
-mysql -h localhost -u root < RUN.sql
+mysql -h localhost -u root < database.sql
 ``` 
 ``` 
 sudo apt install golang-go
@@ -48,7 +42,7 @@ Create a .env file and add the following into it
 DBDRIVER=mysql
 DBUSER= [YOUR DATABASE USERNAME]
 DBPASS= [YOUR DATABASE PASSWORD]
-DBNAME=games
+DBNAME=[YOUR DATABASE NAME]
 ```
 ## How to run:
 
