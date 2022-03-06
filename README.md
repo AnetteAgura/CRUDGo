@@ -29,7 +29,10 @@ sudo apt-get install mysql-server
 cd CRUDGo
 ``` 
 ``` 
-mysql -h localhost -u root < database.sql
+mysql -u [YOUR DATABASE USERNAME] -p -e "CREATE DATABASE [YOUR DATABASE NAME]"
+``` 
+``` 
+mysql -h localhost -u [YOUR DATABASE USERNAME] -p [YOUR DATABASE NAME] < database.sql
 ``` 
 ``` 
 sudo apt install golang-go
